@@ -2,7 +2,7 @@ Author: Ruixian Zhao
 
 # Introduction
 Team: Kappa
-Team member: Ruixian Zhao, Jie Cao, Szilvia Kondorai
+Team member: Ruixian Zhao
 Contact Email: ruixian.zhao.2018@uni.strath.ac.uk
 
 Dataset: IMDB Review, Fashion MNIST
