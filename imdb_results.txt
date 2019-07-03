@@ -1,0 +1,310 @@
+
+=======================================================================
+Model name: imdb-1-14-100-0.001-7-m1
+ The combination: 1,
+ learning rate: 0.001,
+ epochs: 14,
+ batch size: 100,
+ seed: 7
+optimizer: RMSprop, init_model: he_nromal, activatin: softplus
+Training time: 21.44 seconds
+Training Accuracy: 93.98%
+Test accuracy: 88.54%
+
+The Architecture of the Model:
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+embedding_1 (Embedding)      (None, None, 16)          160000    
+_________________________________________________________________
+global_average_pooling1d_1 ( (None, 16)                0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 32)                544       
+_________________________________________________________________
+dense_2 (Dense)              (None, 1)                 33        
+=================================================================
+Total params: 160,577
+Trainable params: 160,577
+Non-trainable params: 0
+_________________________________________________________________
+=======================================================================
+
+=======================================================================
+Model name: imdb-2-5-128-0.002-7-m2.ckpt
+ The dataset: imdb
+, The combination: 2,
+ Learning rate: 5,
+ Epochs: 128,
+ Batch size: 0.002,
+ Seed: 7
+, Other notes: m2
+Notations: This is the fucking model saving
+
+Training time: 50.23 seconds
+Training Accuracy: 95.80%
+Test accuracy: 32.08%
+
+In the report the model name is: model 2
+In the report the Training Accuracy:  0.96%
+In the report the Test Accuracy:  0.32%
+
+The Architecture of the Model:
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+embedding_1 (Embedding)      (None, 256, 32)           320000    
+_________________________________________________________________
+conv1d_1 (Conv1D)            (None, 256, 32)           3104      
+_________________________________________________________________
+max_pooling1d_1 (MaxPooling1 (None, 128, 32)           0         
+_________________________________________________________________
+flatten_1 (Flatten)          (None, 4096)              0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 20)                81940     
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 20)                0         
+_________________________________________________________________
+dense_2 (Dense)              (None, 1)                 21        
+=================================================================
+Total params: 405,065
+Trainable params: 405,065
+Non-trainable params: 0
+_________________________________________________________________
+=======================================================================
+
+
+=======================================================================
+Model name: imdb-3-9-64-0.002-7-m3.ckpt
+ The dataset: imdb,
+ The combination: 3,
+ Epochs: 9,
+ Batch size: 64,
+ Learning rate: 0.002,
+ Seed: 7,
+ Other notes: m3
+Notations: nothing
+
+Training time: 1196.17 seconds
+Training Accuracy: 94.74%
+Test accuracy: 34.90%
+
+In the report the model name is: optimizer: Adam, dr=0.2
+In the report the Training Accuracy:  0.95%
+In the report the Test Accuracy:  0.35%
+
+The Architecture of the Model:
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+embedding_1 (Embedding)      (None, 256, 32)           320000    
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 256, 32)           0         
+_________________________________________________________________
+lstm_1 (LSTM)                (None, 100)               53200     
+_________________________________________________________________
+dropout_2 (Dropout)          (None, 100)               0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 1)                 101       
+=================================================================
+Total params: 373,301
+Trainable params: 373,301
+Non-trainable params: 0
+_________________________________________________________________
+=======================================================================
+
+=======================================================================
+Model name: imdb-3-19-500-0.002-7-m4.ckpt
+ The dataset: imdb,
+ The combination: 3,
+ Epochs: 19,
+ Batch size: 500,
+ Learning rate: 0.002,
+ Seed: 7,
+ Other notes: m4
+Notations: nothing
+
+Training time: 625.21 seconds
+Training Accuracy: 81.27%
+Test accuracy: 49.68%
+
+In the report the model name is: optimizer: Adam, dr=0.2
+In the report the Training Accuracy:  0.81%
+In the report the Test Accuracy:  0.50%
+
+The Architecture of the Model:
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+embedding_1 (Embedding)      (None, 256, 32)           320000    
+_________________________________________________________________
+gru_1 (GRU)                  (None, 32)                6240      
+_________________________________________________________________
+dense_1 (Dense)              (None, 1)                 33        
+=================================================================
+Total params: 326,273
+Trainable params: 326,273
+Non-trainable params: 0
+_________________________________________________________________
+=======================================================================
+=======================================================================
+Model name: imdb-4-14-512-0.002-7-m5.ckpt
+ The dataset: imdb,
+ The combination: 4,
+ Epochs: 14,
+ Batch size: 512,
+ Learning rate: 0.002,
+ Seed: 7,
+ Other notes: m5
+Notations: nothing
+
+Training time: 133.06 seconds
+Training Accuracy: 100.00%
+Test accuracy: 65.39%
+
+In the report the model name is: optimizer: Adam, dr=0.2
+In the report the Training Accuracy:  1.00%
+In the report the Test Accuracy:  0.65%
+
+The Architecture of the Model:
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+embedding_2 (Embedding)      (None, 256, 32)           320000    
+_________________________________________________________________
+flatten_1 (Flatten)          (None, 8192)              0         
+_________________________________________________________________
+dense_2 (Dense)              (None, 250)               2048250   
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 250)               0         
+_________________________________________________________________
+dense_3 (Dense)              (None, 1)                 251       
+=================================================================
+Total params: 2,368,501
+Trainable params: 2,368,501
+Non-trainable params: 0
+_________________________________________________________________
+=======================================================================
+
+=======================================================================
+Model name: imdb-5-10-500-0.002-7-m6.ckpt
+ The dataset: imdb,
+ The combination: 5,
+ Epochs: 10,
+ Batch size: 500,
+ Learning rate: 0.002,
+ Seed: 7,
+ Other notes: m6
+Notations: nothing
+
+Training time: 621.48 seconds
+Training Accuracy: 97.74%
+Test accuracy: 47.89%
+
+In the report the model name is: optimizer: Adam
+In the report the Training Accuracy:  0.98%
+In the report the Test Accuracy:  0.48%
+
+The Architecture of the Model:
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+embedding_3 (Embedding)      (None, 256, 32)           320000    
+_________________________________________________________________
+conv1d_1 (Conv1D)            (None, 256, 32)           3104      
+_________________________________________________________________
+max_pooling1d_1 (MaxPooling1 (None, 128, 32)           0         
+_________________________________________________________________
+lstm_1 (LSTM)                (None, 100)               53200     
+_________________________________________________________________
+dense_4 (Dense)              (None, 1)                 101       
+=================================================================
+Total params: 376,405
+Trainable params: 376,405
+Non-trainable params: 0
+_________________________________________________________________
+=======================================================================
+
+=======================================================================
+Model name: imdb-4-5-512-0.002-7-m7.ckpt
+ The dataset: imdb,
+ The combination: 4,
+ Epochs: 5,
+ Batch size: 512,
+ Learning rate: 0.002,
+ Seed: 7,
+ Other notes: m7
+Notations: nothing
+
+Training time: 40.20 seconds
+Training Accuracy: 100.00%
+Test accuracy: 52.22%
+
+In the report the model name is: optimizer: Adam, dr=0.5
+In the report the Training Accuracy:  1.00%
+In the report the Test Accuracy:  0.52%
+
+The Architecture of the Model:
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+embedding_4 (Embedding)      (None, 256, 32)           320000    
+_________________________________________________________________
+flatten_2 (Flatten)          (None, 8192)              0         
+_________________________________________________________________
+dense_5 (Dense)              (None, 250)               2048250   
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 250)               0         
+_________________________________________________________________
+dense_6 (Dense)              (None, 1)                 251       
+=================================================================
+Total params: 2,368,501
+Trainable params: 2,368,501
+Non-trainable params: 0
+_________________________________________________________________
+=======================================================================
+
+=======================================================================
+Model name: imdb-5-10-500-0.005-7-m8.ckpt
+ The dataset: imdb,
+ The combination: 5,
+ Epochs: 10,
+ Batch size: 500,
+ Learning rate: 0.005,
+ Seed: 7,
+ Other notes: m8
+Notations: nothing
+
+Training time: 711.38 seconds
+Training Accuracy: 97.01%
+Test accuracy: 40.24%
+
+In the report the model name is: optimizer: Adam, all
+In the report the Training Accuracy:  0.97%
+In the report the Test Accuracy:  0.40%
+
+The Architecture of the Model:
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+embedding_5 (Embedding)      (None, 256, 32)           320000    
+_________________________________________________________________
+conv1d_2 (Conv1D)            (None, 256, 32)           3104      
+_________________________________________________________________
+average_pooling1d_1 (Average (None, 128, 32)           0         
+_________________________________________________________________
+lstm_2 (LSTM)                (None, 100)               53200     
+_________________________________________________________________
+dropout_2 (Dropout)          (None, 100)               0         
+_________________________________________________________________
+dense_7 (Dense)              (None, 16)                1616      
+_________________________________________________________________
+dropout_3 (Dropout)          (None, 16)                0         
+_________________________________________________________________
+dense_8 (Dense)              (None, 1)                 17        
+=================================================================
+Total params: 377,937
+Trainable params: 377,937
+Non-trainable params: 0
+_________________________________________________________________
+=======================================================================
+
